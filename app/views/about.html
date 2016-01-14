@@ -1,0 +1,18 @@
+<p>This is the about view.</p>
+<!--<div>-->
+<!--<ul infinite-scroll="getMore()" infinite-scroll-disabled="finished">-->
+<!--<li ng-repeat="item in items">-->
+<!--{{ item.title }}-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+
+<div class="container">
+  <div infinite-scroll="getMore()" infinite-scroll-disabled="finished">
+    <div masonry style="margin-left: 15px; margin-right: 15px;">
+      <div ng-repeat="item in items" class="masonry-brick col-md-4" style="margin-bottom: 20px;">
+        <img ng-src="{{ item.src }}" alt="/" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+</div>
